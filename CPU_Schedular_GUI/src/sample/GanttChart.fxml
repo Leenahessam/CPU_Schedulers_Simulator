@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GanttChartSchedular">
+   <children>
+      <TableView id="dataTable" fx:id="tableView" layoutX="25.0" layoutY="27.0" prefHeight="295.0" prefWidth="440.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="436.0" AnchorPane.topAnchor="24.0">
+        <columns>
+          <TableColumn id="name" fx:id="nameCol" editable="false" prefWidth="75.0" sortable="false" text="Process name" />
+            <TableColumn id="turnAround" fx:id="turnAroundCol" prefWidth="75.0" text="Turn Around Time" />
+            <TableColumn id="waiting" fx:id="waitingCol" prefWidth="75.0" text="Waiting time" />
+            <TableColumn id="colors" fx:id="colorCol" prefWidth="75.0" text="Process color" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextArea id="Averages" fx:id="Averages" editable="false" layoutX="24.0" layoutY="348.0" prefHeight="102.0" prefWidth="440.0" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="348.0" />
+      <TextArea id="Execution_order" fx:id="Execution_order" editable="false" layoutX="422.0" layoutY="23.0" prefHeight="425.0" prefWidth="394.0" AnchorPane.bottomAnchor="151.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="24.0" />
+      <HBox id="hbox" fx:id="hbox" layoutX="65.0" layoutY="514.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="514.0" />
+      <Label layoutX="24.0" layoutY="466.0" prefHeight="30.0" prefWidth="138.0" text="Gantt Chart:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

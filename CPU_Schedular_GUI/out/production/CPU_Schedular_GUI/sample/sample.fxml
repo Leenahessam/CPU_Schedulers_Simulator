@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="panel" fx:id="schedule" accessibleRole="COMBO_BOX" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#enable" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: darkgray; -fx-border-color: black; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button id="scheduleButton" fx:id="scheduleButton" alignment="CENTER" disable="true" layoutX="316.0" layoutY="223.0" mnemonicParsing="false" onAction="#schedulerChoice" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: black;" text="Start Scheduling" textFill="WHITE" />
+        <Label layoutX="36.0" layoutY="38.0" prefHeight="51.0" prefWidth="281.0" text="Choose the scheduling technique:">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font></Label>
+        <ComboBox id="comboId" fx:id="choice" layoutX="36.0" layoutY="96.0" onAction="#comboAction" prefHeight="31.0" prefWidth="225.0" promptText="Select">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="SJF Scheduling" />
+                    <String fx:value="SRTF Scheduling" />
+                    <String fx:value="Priority Scheduling" />
+                    <String fx:value="AG Scheduling" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+      <TextField id="extraTextField" fx:id="textField1" layoutX="36.0" layoutY="162.0" prefHeight="31.0" prefWidth="431.0" visible="false" />
+    </children>
+    <cursor>
+        <Cursor fx:constant="HAND" />
+    </cursor>
+</Pane>

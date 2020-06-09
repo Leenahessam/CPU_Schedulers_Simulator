@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Processes_Controller">
+   <children>
+      <TextField id="name" fx:id="name" layoutX="207.0" layoutY="61.0" onKeyReleased="#enableAdd" prefHeight="30.0" prefWidth="250.0" promptText="Enter Process Name" />
+      <TextField fx:id="color" layoutX="207.0" layoutY="110.0" onKeyReleased="#enableAdd" prefHeight="30.0" prefWidth="250.0" promptText="Enter Process Color" />
+      <TextField fx:id="arrivalTime" layoutX="207.0" layoutY="157.0" onKeyReleased="#enableAdd" prefHeight="30.0" prefWidth="250.0" promptText="Enter Process Arrival Time" />
+      <TextField fx:id="burstTime" layoutX="207.0" layoutY="204.0" onKeyReleased="#enableAdd" prefHeight="30.0" prefWidth="250.0" promptText="Enter Process Burst Time" />
+      <TextField fx:id="priority" layoutX="208.0" layoutY="251.0" onKeyReleased="#enableAdd" prefHeight="30.0" prefWidth="250.0" promptText="Enter Process Priorty Number" />
+      <Button id="schedule" fx:id="schedule" blendMode="MULTIPLY" disable="true" layoutX="443.0" layoutY="338.0" mnemonicParsing="false" onAction="#scheduleButton" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: black; -fx-border-color: lightgray; -fx-border-radius: 5px; -fx-border-width: 2px;" text="Schedule" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="37.0" layoutY="64.0" prefHeight="24.0" prefWidth="150.0" text="Process Name:" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="113.0" prefHeight="24.0" prefWidth="150.0" text="Process Color:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="160.0" prefHeight="24.0" prefWidth="150.0" text="Process Arrival Time:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="207.0" prefHeight="24.0" prefWidth="150.0" text="Process Burst Time:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="254.0" prefHeight="24.0" prefWidth="150.0" text="Process Priority Number:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button id="addProcess" fx:id="add" blendMode="MULTIPLY" disable="true" layoutX="443.0" layoutY="297.0" mnemonicParsing="false" onAction="#addButton" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: black; -fx-border-color: lightgray; -fx-border-width: 2px; -fx-border-radius: 5px;" text="Add Process" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
